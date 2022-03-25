@@ -4,7 +4,7 @@ import requests
 import time
 import re
 '''
-Artemis
+Artemis (inspired by Gobuster)
 -------
 URL Mapper detecting directories on a Web Application.
 You need to parse the whole url > {https://example.com}.
