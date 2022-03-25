@@ -44,11 +44,8 @@ def main(url, wordlist):
 					#print(f"[+]{path}:{response.status_code}")
 					if(response.status_code != 404 and re.findall('[#]', word) == []):
 						print(c+f"[+]{response.status_code}: /{word}"+reset)
-
 					else:
 						continue
-
-
 
 				except requests.exceptions.MissingSchema:
 					continue
@@ -60,7 +57,6 @@ def main(url, wordlist):
 	except KeyboardInterrupt as error:
 		print(b+"\nEscaping Artemis..C ya"+reset)
 		sys.exit()
-
 
 if __name__ == '__main__':
 	if(len(sys.argv) < 2 or sys.argv[1] == '-h'):
